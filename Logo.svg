@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="332.549" height="537.603" viewBox="0 0 332.549 537.603">
+  <g id="LLOGO" transform="translate(-44.341 -122.366)">
+    <g id="LOGO_2" data-name="LOGO 2" transform="translate(-673.659 -227)">
+      <g id="Group_5" data-name="Group 5" transform="translate(718 363.11)">
+        <text id="_" data-name="{" transform="translate(0 425.882)" fill="#002b36" font-size="323" font-family="OpenSans-Regular, Open Sans"><tspan x="0" y="0">{</tspan></text>
+        <text id="_2" data-name="{" transform="matrix(-1, 0, 0, 1, 332.549, 428.859)" fill="#002b36" font-size="323" font-family="OpenSans-Regular, Open Sans"><tspan x="0" y="0">{</tspan></text>
+        <g id="Group_26" data-name="Group 26">
+          <g id="Group_6" data-name="Group 6" transform="translate(105.961)">
+            <path id="Path_24" data-name="Path 24" d="M735.4,1241.34c-22,36.094-25.827,49.381,0,83.669s6.831,61.474-11.953,80.257" transform="translate(-669.921 -1241.34)" fill="none" stroke="#002b36" stroke-linecap="round" stroke-width="20"/>
+            <path id="Path_24-2" data-name="Path 24" d="M735.4,1241.34c-22,36.094-25.827,49.381,0,83.669s6.831,61.474-11.953,80.257" transform="translate(-717.44 -1241.34)" fill="none" stroke="#ff9200" stroke-linecap="round" stroke-width="20"/>
+            <path id="Path_23" data-name="Path 23" d="M735.4,1241.34c-22,36.094-25.827,49.381,0,83.669s6.831,61.474-11.953,80.257" transform="translate(-622.807 -1241.34)" fill="none" stroke="#ff9200" stroke-linecap="round" stroke-width="20"/>
+          </g>
+        </g>
+        <path id="Subtraction_3" data-name="Subtraction 3" d="M93.165,202.416c2.451-25.66,4.161-67.628,4.161-102.058,0-34.5-1.655-74.829-4.121-100.358,5.463,1.5,11.967,5.866,18.812,12.619A138.018,138.018,0,0,1,131.4,37.358,160.45,160.45,0,0,1,146.551,68.5c4.059,11.516,6.118,22.225,6.118,31.83a129.13,129.13,0,0,1-4.621,32.735A148.808,148.808,0,0,1,135.387,165.1c-5.6,10.328-11.962,18.8-18.9,25.171-7.524,6.918-15.372,11.005-23.325,12.148Zm-34.79-.18h0c-7.83-1.4-15.543-5.652-22.922-12.639-6.812-6.448-13.048-14.915-18.533-25.168C6.325,144.626,0,120.666,0,100.331,0,90.9,1.992,80.464,5.921,69.3a156.431,156.431,0,0,1,14.724-30.27A145.434,145.434,0,0,1,39.619,14.523C46.3,7.708,52.753,2.954,58.28.774c-2.421,25.529-4.049,65.548-4.049,99.584,0,34.318,1.7,76.211,4.145,101.876Z" transform="translate(92.484 239.676)" fill="#ff9200"/>
+        <text id=":" transform="translate(150.659 380.89)" fill="#002b36" font-size="155" font-family="ProximaNovaA-Bold, Proxima Nova Alt" font-weight="700"><tspan x="0" y="0">:</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
