@@ -2,9 +2,19 @@ html {
 	scroll-behavior: smooth;
 }
 
+::selection {
+	color: white;
+	background: black;
+}
+
+@font-face {
+	font-family: ProximaNova;
+	src: url("./ProximaNova-Regular.otf") format("opentype");
+}
+
 body {
 	margin: 0;
-	font-family: "Josefin Sans", sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -15,28 +25,25 @@ a {
 .nav {
 	border-bottom: 1px solid #eaeaeb;
 	text-align: right;
-	height: 70px;
-	line-height: 70px;
+	height: 13vh;
+	line-height: 13vh;
 	z-index: 1;
 	position: sticky;
+	font-family: ProximaNova, sans-serif;
 }
 
 .logo {
+	height: 13vh;
 	float: left;
-	width: 200px;
-	height: 80px;
-	margin-top: -10px;
-	// font-family: logofont;
+	margin-left: 5%;
 }
 
-@media only screen and (min-width: 501px) {
-	.logo {
-		float: left;
-		width: 200px;
-		height: 150px;
-		margin-top: -30px;
-		// font-family: logofont;
-	}
+.logo-text {
+	float: left;
+	color: #002631;
+	line-height: 13vh;
+	font-size: 1.5em;
+	padding-left: 10px;
 }
 
 .menu {
@@ -46,9 +53,10 @@ a {
 .menu a {
 	clear: right;
 	text-decoration: none;
-	color: gray;
+	color: #333;
 	margin: 0 10px;
-	line-height: 70px;
+	line-height: 13vh;
+	font-size: 1.2em;
 }
 
 span {
@@ -58,10 +66,10 @@ span {
 label {
 	margin: 0 40px 0 0;
 	font-size: 26px;
-	line-height: 70px;
 	display: none;
 	width: 26px;
 	float: right;
+	line-height: 13vh;
 }
 #toggle {
 	display: none;
@@ -94,316 +102,162 @@ label {
 	}
 }
 
-.first-banner {
-	width: 90%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 10vh;
-}
-
-.phone-img {
-	width: 450px;
+.hero-section {
+	width: 100%;
 	height: auto;
+	background-color: #002631;
+	margin-bottom: 7%;
 }
 
-@media only screen and (max-width: 500px) {
-	.first-banner {
-		margin-top: 7vh;
+.hero-title {
+	color: white;
+	font-weight: 400;
+	margin: 0em;
+	padding: 0;
+	padding-top: 7%;
+	font-size: 2em;
+}
+
+.sub-hero-section {
+	width: 80%;
+	margin: auto;
+
+	& p {
+		color: white;
+		padding: 20px 0;
+		line-height: 2em;
 	}
-}
-
-@media only screen and (max-width: 500px) {
-	.phone-img {
-		margin-top: 3vh;
-		width: 300px;
-		overflow-x: hidden;
-	}
-}
-
-.banner-content {
-	display: flex;
-	flex-direction: column;
-	width: 600px;
-}
-
-.banner-small-text {
-	color: #fd0052;
-	font-size: 18px;
-	font-weight: 450;
-}
-
-.banner-heading-text {
-	font-size: 40px;
-	padding-bottom: 15px;
-	padding-top: 10px;
-	font-weight: 500;
-}
-
-.banner-info-text {
-	padding-top: 5px;
-	font-size: 20px;
-	color: rgba(0, 0, 0, 0.6);
-}
-
-.banner-buttons {
-	margin-top: 40px;
 
 	& button {
-		padding: 17px 45px;
-		margin-right: 40px;
-		cursor: pointer;
-		font-size: 16px;
-		font-weight: 550;
-		letter-spacing: 1px;
-		border: 1px solid transparent;
-		border-radius: 4px;
-		outline: none;
-	}
-
-	& .know-more-button {
-		background-color: rgba(253, 0, 82, 0.8);
 		color: white;
-		margin-bottom: 20px;
+		background-color: #ff9201;
+		border: transparent;
+		font-size: 1.1em;
+		padding: 0.7em 1.4em;
+		border-radius: 2px;
+		margin-bottom: 5%;
+		cursor: pointer;
+		outline: none;
 
 		&:hover {
-			background-color: rgba(253, 0, 82, 1);
-		}
-	}
-
-	& .contact-us-button {
-		color: rgba(253, 0, 82, 0.8);
-		background-color: transparent;
-		border: 2px solid rgba(253, 0, 82, 0.6);
-
-		&:hover {
-			color: rgba(253, 0, 82, 1);
-			border: 2px solid rgba(253, 0, 82, 1);
+			background-color: #dd7d00;
+			transition: 0.2s;
 		}
 	}
 }
-.second-banner-main {
-	width: 100%;
-	height: auto;
-	margin-top: 14vh;
-	border-top: 2px solid #002a36;
-	border-bottom: 2px solid #002a36;
-	margin-bottom: 0;
-	display: flex;
-	flex-direction: column;
+
+.features {
+	width: 80%;
+	margin: auto;
+	margin-bottom: 7%;
+
+	& h1 {
+		padding-top: 0px;
+		padding: 0px;
+		margin: 0;
+		text-align: center;
+		font-weight: 500;
+		font-size: 1.8em;
+	}
 }
 
-.animation-heading {
-	color: rgba(253, 0, 82, 1);
-	font-size: 2rem;
-	text-align: center;
-	width: 100%;
-	letter-spacing: 1px;
+@media screen and(min-width:500px) {
+	hr {
+		width: 10%;
+		border: 1px solid #ff9201;
+	}
+	.features-title-text {
+		padding-top: 10px;
+		width: 60%;
+		text-align: center;
+		margin: auto;
+		color: #333;
+		font-weight: 400;
+	}
 }
 
-.cards {
+@media screen and (max-width: 500px) {
+	hr {
+		width: 30%;
+		border: 1px solid #ff9201;
+	}
+	.features-title-text {
+		padding-top: 10px;
+		width: 100%;
+		text-align: center;
+		margin: auto;
+		color: grey;
+		font-weight: 500;
+		line-height: 2em;
+	}
+}
+
+.sub-features-section {
 	display: flex;
+	width: 100%;
+	margin: auto;
 	flex-direction: row;
-	justify-content: space-evenly;
-	margin-top: 5%;
 	flex-wrap: wrap;
-}
-
-.card {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	align-items: center;
-	margin-bottom: 10%;
-}
-
-.card-text {
-	width: 300px;
-	font-size: 1.2rem;
-	padding-top: 10px;
-}
-
-.partial-card-text {
-	color: #002a36;
-}
-
-.card-svg {
-	font-size: 3rem;
-}
-
-.services {
-	width: 90%;
-	display: flex;
-	margin-right: auto;
-	margin-left: auto;
-	flex-direction: column;
-	margin-top: 10vh;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.services-heading {
-	text-align: center;
-	color: #002a36;
-	margin-bottom: 6vh;
-}
-
-.list1 {
-	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
-}
+	margin-top: 5%;
 
-li {
-	list-style-type: circle;
-	color: #ff9201;
-	font-size: 20px;
-	padding: 10px 10px 10px 0px;
-}
-
-.answer-list {
-	list-style-type: none;
-	color: rgba(253, 0, 82, 1);
-	margin-left: 65px;
-}
-
-@media only screen and (max-width: 500px) {
-	.answer-list {
-		list-style-type: none;
-		color: rgba(253, 0, 82, 1);
-		margin-left: 0px;
+	& .feature {
+		width: 300px;
+		& p {
+			color: grey;
+			line-height: 1.7em;
+		}
 	}
 }
 
-.talk-us-cards {
-	display: flex;
-	flex-direction: column;
-}
-
-.talk-us-card {
-	width: 320px;
+.benefits-section {
+	width: 100%;
 	height: auto;
-	display: flex;
-	flex-direction: column;
+	background-color: #f7f7f7;
+}
+
+.benefits-title {
+	color: black;
+	font-weight: 400;
+	margin: 0em;
+	padding: 0;
+	padding-top: 7%;
+	font-size: 2em;
 	text-align: center;
-	box-shadow: rgba(19, 15, 235, 0.1) 2px 4px 40px;
-	transition: box-shadow 0.4s ease-in-out 0s;
-	border-radius: 10px;
-	margin-bottom: 20px;
 }
 
-.talk-us-card:hover {
-	box-shadow: rgba(19, 15, 235, 0.3) 2px 4px 40px;
+.sub-benefits-section {
+	width: 80%;
+	margin: auto;
+
+	& p {
+		color: black;
+		padding: 20px 0;
+		padding-bottom: 7%;
+		margin: 0;
+		text-align: center;
+		line-height: 2em;
+	}
 }
 
-.talk-heading {
-	font-size: 20px;
-	padding: 10px;
-}
-
-.contact-points {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	margin: 10px 0;
-}
-
-.contact-card-text {
-	margin: 20px 0;
-}
-
-.main-footer {
+footer {
 	width: 100%;
 	height: auto;
 	background-color: black;
-	color: white;
-}
-
-.footer {
-	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.footer-headings {
-	padding: 0;
-	margin: 0;
-	margin-top: 20px;
-}
-
-.contact {
-	width: 350px;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 30px;
-}
-
-.us {
-	width: 350px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-}
-
-.description {
-	display: flex;
-	flex-direction: column;
-}
-
-.sub-description {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.name {
-	font-size: 18px;
-	margin: 10px;
-}
-
-.job {
-	background-color: white;
-	color: black;
-	border-radius: 10px;
-	padding: 3px 5px;
-}
-
-.contact-svgs {
-	margin-top: 20px;
-	width: 200px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.contact-email-svg {
-	font-size: 2em;
-	cursor: pointer;
-}
-
-.mail-link {
-	color: white;
-}
-
-.terms {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	align-items: center;
-	margin-top: 30px;
-}
-
-.term {
-	padding-right: 10px;
-	padding-left: 10px;
+	& ul {
+		color: white;
+		padding: 1%;
+		width: 40%;
+		margin: 0;
+		margin: auto;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	& li {
+		color: white;
+		list-style-type: none;
+		font-weight: 600;
+		width: 100%;
+	}
 }
