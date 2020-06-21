@@ -155,6 +155,29 @@ label {
   transition: 0.2s;
 }
 
+.sub-hero-section .know-more {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ff9201;
+  background-color: transparent;
+  border: 1px solid #ff9201;
+  font-size: 1.1em;
+  padding: 0.7em 1.4em;
+  border-radius: 2px;
+  margin-bottom: 5%;
+  cursor: pointer;
+  outline: none;
+  margin-left: 20px;
+}
+
+.sub-hero-section .know-more:hover {
+  background-color: transparent;
+  border: 1px solid #dd7d00;
+  color: #dd7d00;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .features {
   width: 80%;
   margin: auto;
